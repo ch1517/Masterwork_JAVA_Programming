@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Chapter7_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		ArrayList<String> arraylist = new ArrayList<String>();
+		for(int i=0; i<10; i++){
+			arraylist.add(sc.next());
+		}
+		for(int i=0; i<arraylist.size(); i++){
+			switch(arraylist.get(i)){
+				case "A":
+					System.out.println(4.0);
+					break;
+				case "B":
+					System.out.println(3.0);
+					break;
+				case "C":
+					System.out.println(2.0);
+					break;
+				case "D":
+					System.out.println(1.0);
+					break;
+				case "F":
+					System.out.println(0);
+					break;
+				default:
+					System.out.println("잘못된 값 입력");
+					break;
+			}
+		}
+	}
+
+}

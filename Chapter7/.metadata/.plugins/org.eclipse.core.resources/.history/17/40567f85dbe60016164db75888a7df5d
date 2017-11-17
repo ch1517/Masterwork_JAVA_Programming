@@ -1,0 +1,28 @@
+
+class MyStack<T>{
+	T array[];
+	MyStack(){
+		array=null;
+	}
+	void push(T t){
+		array[array.length-1] = t;
+	}
+	T pop(){
+		return array[array.length-1];
+	}
+	void display(){
+		for(int i=0;i<array.length;i++){
+			System.out.print(array[i] +" ");
+		}
+	}
+}
+public class Chapter7_11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyStack m = new MyStack();
+		m.push(10);
+		m.push(20);
+	}
+
+}
