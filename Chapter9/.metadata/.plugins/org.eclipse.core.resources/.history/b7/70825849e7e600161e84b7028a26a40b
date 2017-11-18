@@ -1,0 +1,28 @@
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.GridLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Chapter9_4 extends JFrame{
+	Chapter9_4(){
+		setTitle("Ten Buttons Frame");
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		Container c = getContentPane();
+		c.setLayout(new GridLayout(1,10));
+		for(int i=0;i<10;i++){
+			JButton btn = new JButton(i+"");
+			btn.setOpaque(true);
+			btn.setBackground(Color.YELLOW);
+			c.add(btn);
+		}
+		setSize(700,300);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Chapter9_4();
+	}
+
+}
