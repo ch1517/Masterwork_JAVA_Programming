@@ -15,9 +15,9 @@ class Product{
 	void input(){
 		Scanner sc = new Scanner(System.in);
 		System.out.print("상품 설명>>");
-		explanation=sc.next();
+		explanation=sc.nextLine();
 		System.out.print("생산자>>");
-		producer=sc.next();
+		producer=sc.nextLine();
 		System.out.print("가격>>");
 		price=sc.nextInt();
 	}
@@ -37,12 +37,12 @@ class Book extends Product{
 	void input(){
 		super.input();
 		Scanner sc = new Scanner(System.in);
+		System.out.print("책 제목>>");
+		book_title=sc.nextLine();
+		System.out.print("저자>>");
+		writer=sc.nextLine();
 		System.out.print("ISBN 번호>>");
 		ISBNnum=sc.nextInt();
-		System.out.print("책 제목>>");
-		book_title=sc.next();
-		System.out.print("저자>>");
-		writer=sc.next();
 	}
 	void print(){
 		super.print();
@@ -60,9 +60,9 @@ class CompactDisc extends Product{
 		super.input();
 		Scanner sc = new Scanner(System.in);
 		System.out.print("앨범 제목>>");
-		album_title=sc.next();
+		album_title=sc.nextLine();
 		System.out.print("가수>>");
-		singer_name=sc.next();
+		singer_name=sc.nextLine();
 	}
 	void print(){
 		super.print();
@@ -91,7 +91,7 @@ public class ProductInfo {
 	
 	static void productAdd(){
 		Scanner sc = new Scanner(System.in);
-		System.out.println("상품 종류 책(1), 음악CD(2), 회화책(3)>>");
+		System.out.printf("상품 종류 책(1), 음악CD(2), 회화책(3)>>");
 		Product p=null;
 		int num=sc.nextInt();
 		
