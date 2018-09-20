@@ -1,6 +1,6 @@
 import java.util.StringTokenizer;
-
-public class Chapter6_10 {
+//Chapter6_10
+public class Query {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
