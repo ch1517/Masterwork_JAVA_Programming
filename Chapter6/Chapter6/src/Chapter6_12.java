@@ -1,4 +1,4 @@
-import java.util.Scanner;
+﻿import java.util.Scanner;
 
 class Person{
 	private String player1;
@@ -49,7 +49,6 @@ public class Chapter6_12 {
 				num3 = (int)Math.round(d3) + 1; 
 				System.out.print(num1+" "+num2+" "+num3);
 				System.out.println();
-				i++;
 				if(num1 == num2 && num2 == num3){
 					if(i%2 == 0){
 						System.out.println(person.getPlayer1Name()+"님 Win");
@@ -58,6 +57,8 @@ public class Chapter6_12 {
 					}
 					break;
 				}
+
+				i++;
 			}
 		}
 	}
